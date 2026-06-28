@@ -1,0 +1,2 @@
+package br.edu.cafeteria.modelo;
+public abstract class Cliente{public static final int XP_POR_REAL=10;private String nome,cpf;private int xp;public Cliente(String n,String c){nome=n;cpf=c;}public abstract int calcularXP(double v);public void adicionarXP(double v){xp+=calcularXP(v);}public String getNome(){return nome;}public void setNome(String n){nome=n;}public String getCpf(){return cpf;}public int getXp(){return xp;}public void setXp(int x){xp=x;}public void removerXP(int x){xp-=x;}}
